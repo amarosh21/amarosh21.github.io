@@ -9,31 +9,48 @@
 	<style>
 
 	#otsikkolaatikko{
-	        font-size :35px;
-		color : #ff0000;
-		border : 3px #000000 outset;
-		width : 300px;
+	        font-size :75px;
+		color : #ADD8E6;
+		width : auto;
 		height : 50px;
 		position : absolute;
-		top : 50px;
-		left : 400px;
-		background-color : #dddddd;
-		padding :30px;
-		border-radius : 20px;
+		top : 30px;
+		left : 70px;
 		font-family : ADLaM Display;
-		background : url("background2.webp");
+		text-shadow : 2px 2px 10px white;
+		animation: bounceIn 1s ease-out;
+		display: inline;
 	}
+
+	@keyframes bounceIn {
+	 0%{
+	  opacity: 0;
+	  transform: scale(0.5);
+	}
+
+	50%{
+	  opacity: 1;
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+       }
+
 
 	#linkit {
 		position : absolute ;
-		top : 190px ;
-		left : 70px ;
+		top : 145px ;
+		left : 70px ;	
+		width : 140px ;
+		height : 190px ;
 		font-size : 20px ;
 		font-family : Garamond, papyrus;
-		border : 3px #000000 outset;
-		padding :10px;
+		padding :15px;
 		border-radius : 10px;
-		background-color : #FAF0E6 ;
+		background-color: rgba(0, 0, 0, 0.5);
+            	box-shadow: 2px 2px 5px white;
+            	animation: slideIn 1s ease-out;
 
 	}
 	
@@ -43,34 +60,71 @@
 	}
 	
 	.sivulinkki:visited {
-		color : gray ;
+		color : white ;
 
 	}
 
 	.sivulinkki:hover {
-		color : red ;
+		color : #58D3F7;
 		font-size : 21px ;
 		text-decoration : underline ;
 	}
 
 	#keskilaatikko {
 		position : absolute;
-		top : 200px;
-		left : 230px;
-		width : 800px;
-		height : 400px;
-		border : solid 2px #000000;
+		top : 140px;
+		left : 320px;
+		width : 710px;
+		height : 520px;
 		border-radius : 10px;
 		padding : 10px;
-		font family : Times, serif;
-		font-size : 18px;
-		background-color: #E6E6FA;
+		font-family : Georgia;
+		font-size : 19px;
+		color : white ;
+		background-color: rgba(0, 0, 0, 0.5) ;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
 	}
 
 	body {
-	        background : url("background17.jpg") ;
+	        background : url("ttbackground2.jpg") ;
+		background-size: cover;
 	
-	{
+	}
+
+	.image {
+	   width: 100%;
+	   height: 70%;
+	   border-radius:10px;
+	}
+
+	#keskilaatikko div {
+		text-align: center; 
+		width: 45%;
+		margin-top: -20px;
+	}
+
+	#keskilaatikko div img {
+		max-width: 100%
+		height: auto;
+	}
+
+	#keskilaatikko div:nth-child(2) img {
+		transform: translateX(-10px);
+	} 
+	
+	.player-info {
+		font-size: 16px;
+		color: white;
+		margin-top: 10px;
+	}
+		
+	.player-name {
+		font-family: 'Arial', sans-serif;
+		font-size: 24px;
+		color: white;
+		text-shadow: 2px 2px 5px white;
 
 	</style>
 
@@ -79,18 +133,31 @@
 
 <body>
 	<div id="otsikkolaatikko">
-	Players
+	   Top players &nbsp;
 	</div>
 
 	<div id="linkit">
-		<a href="tabletennis.html" class="sivulinkki">☆Tabletennis</a><br />
-		<a href="players.html" class="sivulinkki">☆Players</a><br />
-		<a href="achievements.html" class="sivulinkki">☆Achievements</a><br />
-		<a href="videos.html" class="sivulinkki">☆Videos</a><br />
+		<a href="index.html" class="sivulinkki">⇨ Tabletennis</a><br /><br />
+		<a href="highlights.html" class="sivulinkki">⇨ Highlights</a><br /><br />
+		<a href="tournaments.html" class="sivulinkki">⇨ Tournaments</a><br /><br />
+		<a href="tips.html" class="sivulinkki">⇨ Training tips</a><br /><br />
 	</div>
 
 	<div id="keskilaatikko">
-		tähän tulee kaikki jutut minun sivulla
+	
+	<div> 
+
+	<p class="player-name">Miwa Harimoto</p>
+	<img src="miwaharimoto.jpg " alt="Miwa Harimoto" class="image" />
+	<p class="player-info">
+	Mima Harimoto is a young Japanese table tennis player, known for her speed and skill. She made history as the youngest player to win a World Tour title.
+	</div>
+
+	<div>
+	<p class="player-name">Chen Meng</P>
+	<img src="chenmeng.jpg " alt="Chen Meng" class="image"/>
+	<p class="player-info">
+	Chen Meng is a top Chinese player, ranked No. 1 in women’s singles, Olympic gold medalist, and multiple World Champion.
 	</div>
 	
 </body>

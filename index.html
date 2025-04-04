@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head> 
+       <title>
+	dokumentin otsikko
+       </title>
+
+	<style>
+
+	#otsikkolaatikko{
+	        font-size :75px;
+		color : #ADD8E6;
+		width : 250px;
+		height : 50px;
+		position : absolute;
+		top : 30px;
+		left : 70px;
+		font-family : ADLaM Display;
+		text-shadow : 2px 2px 10px white;
+		animation: bounceIn 1s ease-out;
+	}
+
+	@keyframes bounceIn {
+	 0%{
+	  opacity: 0;
+	  transform: scale(0.5);
+	}
+
+	50%{
+	  opacity: 1;
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+       }
+
+	#linkit {
+		position : absolute ;
+		top : 145px ;
+		left : 70px ;	
+		width : 140px ;
+		height : 190px ;
+		font-size : 20px ;
+		font-family : Garamond, papyrus;
+		padding :15px;
+		border-radius : 10px;
+		background-color: rgba(0, 0, 0, 0.5);
+            	box-shadow: 2px 2px 5px white;
+            	animation: slideIn 1s ease-out;
+
+	}
+	
+	.sivulinkki {
+		text-decoration : none ;
+		color : blue ;
+	}
+	
+	.sivulinkki:visited {
+		color : white ;
+
+	}
+
+	.sivulinkki:hover {
+		color : #58D3F7;
+		font-size : 21px ;
+		text-decoration : underline ;
+	}
+
+	#keskilaatikko {
+		position : absolute;
+		top : 140px;
+		left : 300px;
+		width : 850px;
+		height : 500px;
+		border-radius : 10px;
+		padding : 5px 10px;
+		font-family : Georgia;
+		font-size : 19px;
+		color : white ;
+		background-color: rgba(0, 0, 0, 0.5) ;
+		box-shadow: 2px 2px 5px white;		
+	}
+
+	#keskilaatikko {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	body {
+	        background : url("ttbackground2.jpg") ;
+		background-size: cover;
+	
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+	<div id="otsikkolaatikko">
+	TableTennis
+	</div>
+
+	<div id="linkit">
+		<a href="players.html" class="sivulinkki">⇨ Top players</a><br /><br />
+		<a href="highlights.html" class="sivulinkki">⇨ Highlights</a><br /><br />
+		<a href="tournaments.html" class="sivulinkki">⇨ Tournaments</a><br /><br />
+		<a href="tips.html" class="sivulinkki">⇨ Training tips</a><br /><br />
+	</div>
+
+	<div id="keskilaatikko">
+		<p>Table tennis, also known as ping pong, is a fast-paced racket sport played on a stationary table. Players use small paddles to hit a lightweight plastic ball back and forth across a net, aiming to outmaneuver their opponents with speed, spin, and precise placement. Points are scored when an opponent fails to return the ball successfully, and matches are typically played in a best-of-five or best-of-seven format.</p>
+
+<p>The sport originated in England in the late 19th century as an indoor alternative to lawn tennis. Over time, it evolved with new equipment, techniques, and playing styles, eventually gaining global recognition. Today, table tennis is governed by the International Table Tennis Federation (ITTF) and is an official Olympic sport, featuring highly skilled players from around the world.</p>
+
+<p>Professional players master various strokes, including topspin, backspin, and smashes, to dominate their opponents. The game demands quick reflexes, agility, and strategic thinking, making it both an exciting competitive sport and a popular recreational activity worldwide.</p>
+
+<p>Table tennis can be played in singles or doubles formats. Doubles matches require excellent coordination, as partners must take turns hitting the ball while maintaining swift movement and strategic positioning. Mixed doubles, featuring teams with one male and one female player, add extra excitement to the game. These formats are popular in both recreational and professional settings, including the Olympics and World Table Tennis Championships.</p>
+
+<p>Regardless of the format, table tennis remains a dynamic and engaging sport that challenges players' skill, teamwork, and adaptability.</p>
+
+	</div>
+	
+</body>
+
+</html>

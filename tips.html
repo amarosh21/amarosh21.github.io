@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head> 
+       <title>
+	dokumentin otsikko
+       </title>
+
+	<style>
+
+	#otsikkolaatikko{
+	        font-size :75px;
+		color : #ADD8E6;
+		font-family : ADLaM Display;
+		text-shadow : 2px 2px 10px white;
+		animation: bounceIn 1s ease-out;
+		display: inline-block;
+		margin-top:30px;
+		margin-left: 70px;
+	}
+
+	@keyframes bounceIn {
+	 0%{
+	  opacity: 0;
+	  transform: scale(0.5);
+	}
+
+	50%{
+	  opacity: 1;
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+       }
+
+	#linkit {
+		position : absolute ;
+		top : 145px ;
+		left : 70px ;	
+		width : 140px ;
+		height : 190px ;
+		font-size : 20px ;
+		font-family : Garamond, papyrus;
+		padding :15px;
+		border-radius : 10px;
+		background-color: rgba(0, 0, 0, 0.5);
+            	box-shadow: 2px 2px 5px white;
+            	animation: slideIn 1s ease-out;
+
+	}
+	
+	.sivulinkki {
+		text-decoration : none ;
+		color : blue ;
+	}
+	
+	.sivulinkki:visited {
+		color : white ;
+
+	}
+
+	.sivulinkki:hover {
+		color : #58D3F7;
+		font-size : 21px ;
+		text-decoration : underline ;
+	}
+
+
+	#keskilaatikko {
+		position : absolute;
+		top : 140px;
+		left : 300px;
+		width : 850px;
+		height : 500px;
+		border-radius : 10px;
+		padding : 5px 10px;
+		font-family : Georgia;
+		font-size : 19px;
+		color : white ;
+		background-color: rgba(0, 0, 0, 0.5) ;
+		box-shadow: 2px 2px 5px white;
+		overflow-y: auto;
+	}
+
+	.training-tip {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		background: rgba(255, 255, 255, 0.1);
+		padding: 15px;
+		border-radius: 10px;
+	}
+
+	.training-tip iframe {
+		width: 300px;
+		height: 170px;
+		border-radius: 10px;
+		margin-right: 20px;
+	}
+
+	.training-tip .tip-info {
+		max-width: 500px;
+	}
+
+	.tip-info a {
+		color: lightblue;
+		text-decoration: none;
+	}
+
+	.tip-info a:hover {
+		color: pink;
+		text-decoration: underline;
+	}
+
+	body {
+	        background : url("ttbackground2.jpg") ;
+		background-size: cover;
+	
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+	<div id="otsikkolaatikko">
+	Training tips
+	</div>
+
+	<div id="linkit">
+		<a href="index.html" class="sivulinkki">⇨ Tabletennis</a></br></br>
+		<a href="players.html" class="sivulinkki">⇨ Players</a></br></br>
+		<a href="highlights.html" class="sivulinkki">⇨ Highlights</a></br></br>
+		<a href="tournaments.html" class="sivulinkki">⇨ Tournaments</a></br></br>
+
+	</div>
+
+	<div id="keskilaatikko">
+
+	    <div class="training-tip">
+		<iframe src="https://www.youtube.com/embed/KMUl0-IFpcQ" allowfullscreen></iframe>
+		<div class="tip-info">
+			<h3>Develop Effective Footwork</h3>
+			<p>Good footwork is essential for positioning yourself to hit every shot effectively. Practice moving quickly in all directions.</p>
+			<a href="https://youtu.be/KMUl0-IFpcQ" target="_blank">Watch on YouTube</a>
+
+	 </div>
+                   </div>
+
+	<div class="training-tip">
+		<iframe src="https://www.youtube.com/embed/O7dPehZc-os" allowfullscreen></iframe>
+		<div class="tip-info">
+			<h3>Practice a Variety of Serves</h3>
+			<p>Diversifying your serves can keep opponents guessing and off-balance.</p>
+			<a href="https://youtu.be/O7dPehZc-os" target="_blank">Watch on YouTube</a>
+
+	 </div>
+                   </div>
+
+ 	<div class="training-tip">
+		<iframe src="https://www.youtube.com/embed/spQNuhv45rA" allowfullscreen></iframe>
+		<div class="tip-info">
+			<h3>Improve Serve Returns</h3>
+			<p>Anticipating and effectively returning serves can turn the game in your favor.</p>
+			<a href="https://youtu.be/spQNuhv45rA" target="_blank">Watch on YouTube</a>
+	 </div>
+                   </div>	
+ 	<div class="training-tip">
+		<iframe src="https://www.youtube.com/embed/axsXLEe1kPQ" allowfullscreen></iframe>
+		<div class="tip-info">
+			<h3>Fast Hands</h3>
+			<p>Quick reactions and short strokes are key to dealing with fast, close exchanges. Practice improving your reaction speed and hitting with precision.</p>
+			<a href="https://youtu.be/axsXLEe1kPQ" target="_blank">Watch on YouTube</a>
+	 </div>
+                   </div>
+
+	</div>
+	
+</body>
+
+</html>
